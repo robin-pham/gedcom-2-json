@@ -51,11 +51,25 @@ impl<'a> Node<'a> {
 }
 
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
+  println!("break here?");
   let contents = fs::read_to_string(config.input_filename)?;
+  println!("break or here?");
 
-  parse(contents)?;
+  let result = parse_to_json(contents)?;
 
+  fs::write(config.output_filename, result)?;
   Ok(())
+}
+
+fn parse_to_json(contents: String) -> Result<String, Box<dyn Error>> {
+  let mut all_nodes = parse_into_nodes(contents)?;
+  let mut dummy_root = Node::new(-1, "dummy", "", "");
+  build_tree(&mut all_nodes, &mut dummy_root)?;
+  let json_string = serde_json::to_string_pretty(&dummy_root.children)
+    .unwrap()
+    .to_owned();
+
+  Ok(json_string)
 }
 
 macro_rules! asstr {
@@ -64,7 +78,7 @@ macro_rules! asstr {
   };
 }
 
-fn parse(contents: String) -> Result<(), Box<dyn Error>> {
+fn parse_into_nodes<'a>(contents: String) -> Result<Vec<Node<'a>>, Box<dyn Error>> {
   let re = Regex::new(r"\s*(0|[1-9]+[0-9]*) (@[^@]+@ |\b)([A-Za-z0-9_]+)( [^\n\r]*|\b)").unwrap();
 
   let mut all_nodes = Vec::new();
@@ -78,15 +92,7 @@ fn parse(contents: String) -> Result<(), Box<dyn Error>> {
     all_nodes.push(new_node);
   }
 
-  let mut dummy_root = Node::new(-1, "dummy", "", "");
-  build_tree(&mut all_nodes, &mut dummy_root)?;
-  let serialized = serde_json::to_string_pretty(&dummy_root.children).unwrap();
-
-  println!("serialized json: {:?}", serialized);
-
-  fs::write("test.txt", serialized)?;
-
-  Ok(())
+  Ok(all_nodes)
 }
 
 fn build_tree<'a>(
@@ -97,35 +103,6 @@ fn build_tree<'a>(
   let mut iter = ordered_nodes.iter_mut();
 
   stack.push(dummy_root);
-
-  // loop {
-  //   let node = iter.next();
-  //   match node {
-  //     Some(node) => {
-  //       let popped = stack.pop();
-
-  //       if popped.is_some() {
-  //         let mut popped = popped.unwrap();
-  //         // println!("stack size: {:?}", stack.len());
-  //         while popped.level >= node.level {
-  //           popped = stack.pop().unwrap();
-  //         }
-
-  //         if popped.level == node.level - 1 {
-  //           // println!("adding child {:?}", node);
-  //           // println!("to {:?}", popped);
-  //           popped.children.borrow_mut().push(node);
-  //         }
-
-  //         stack.push(popped);
-  //         stack.push(node);
-  //       }
-  //     }
-  //     _ => {
-  //       break;
-  //     }
-  //   }
-  // }
 
   while let Some(node) = iter.next() {
     let popped = stack.pop();
@@ -147,34 +124,3 @@ fn build_tree<'a>(
 
   Ok(())
 }
-
-// #[cfg(test)]
-// mod tests {
-//   use super::*;
-
-//   #[test]
-//   fn one_node() {
-//     let contents = String::from(
-//       "\
-// 0 HEAD
-// 1 NAME William Jefferson
-// 1 SEX M
-// 1 OCCU US President No. 42
-// 1 @SUB1@ SUBM
-// ",
-//     );
-
-//     let child1 = Node::new(1, "NAME", "William Jefferson", "");
-//     let child2 = Node::new(1, "SEX", "M", "");
-//     let child3 = Node::new(1, "OCCU", "US President No. 42", "");
-//     let child4 = Node::new(1, "", "SUBM", "@SUB1@");
-//     let mut root = Node::new(0, "HEAD", "", "");
-
-//     root.children = vec![child1, child2, child3, child4];
-//     let serialized = serde_json::to_string(&root).unwrap();
-
-//     println!("{:?}", serialized);
-
-//     //assert_eq!(Vec::from([root]), parse(contents).unwrap());
-//   }
-// }
