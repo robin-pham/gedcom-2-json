@@ -51,9 +51,7 @@ impl<'a> Node<'a> {
 }
 
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
-  println!("break here?");
   let contents = fs::read_to_string(config.input_filename)?;
-  println!("break or here?");
 
   let result = parse_to_json(contents)?;
 
