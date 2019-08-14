@@ -98,15 +98,14 @@ fn build_tree<'a>(
   dummy_root: &mut Node<'a>,
 ) -> Result<(), Box<dyn Error>> {
   let mut stack: Vec<&Node> = Vec::new();
-  let mut iter = ordered_nodes.iter_mut();
+  let iter = ordered_nodes.iter_mut();
 
   stack.push(dummy_root);
 
-  while let Some(node) = iter.next() {
+  for node in iter {
     let popped = stack.pop();
 
-    if popped.is_some() {
-      let mut popped = popped.unwrap();
+    if let Some(mut popped) = popped {
       while popped.level >= node.level {
         popped = stack.pop().unwrap();
       }
