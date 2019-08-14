@@ -1,8 +1,6 @@
 use gedcom_parser::Config;
 use std::env;
 use std::process;
-// extern crate regex;
-// extern crate serde;
 
 fn main() {
     let args: Vec<String> = env::args().collect();
