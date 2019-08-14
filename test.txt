@@ -1,0 +1,847 @@
+[
+  {
+    "data": "",
+    "tag": "HEAD",
+    "pointer": "",
+    "level": 0,
+    "children": [
+      {
+        "data": "FTW",
+        "tag": "SOUR",
+        "pointer": "",
+        "level": 1,
+        "children": [
+          {
+            "data": "Family Tree Maker 2005 (12.0.345 SP1) August 20, 2004",
+            "tag": "VERS",
+            "pointer": "",
+            "level": 2,
+            "children": []
+          },
+          {
+            "data": "Family Tree Maker 2005 for Windows",
+            "tag": "NAME",
+            "pointer": "",
+            "level": 2,
+            "children": []
+          },
+          {
+            "data": "MyFamily.com, Inc.",
+            "tag": "CORP",
+            "pointer": "",
+            "level": 2,
+            "children": [
+              {
+                "data": "360 W 4800 N",
+                "tag": "ADDR",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Provo, UT 84604",
+                    "tag": "CONT",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "(801) 705-7000",
+                "tag": "PHON",
+                "pointer": "",
+                "level": 3,
+                "children": []
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "data": "FTW",
+        "tag": "DEST",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "10 JUN 2007",
+        "tag": "DATE",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "ANSI",
+        "tag": "CHAR",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "@SUBM@",
+        "tag": "SUBM",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "C:\\Documents and Settings\\Home PC\\My Documents\\FTM\\sample1.GED",
+        "tag": "FILE",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "",
+        "tag": "GEDC",
+        "pointer": "",
+        "level": 1,
+        "children": [
+          {
+            "data": "5.5",
+            "tag": "VERS",
+            "pointer": "",
+            "level": 2,
+            "children": []
+          },
+          {
+            "data": "LINEAGE-LINKED",
+            "tag": "FORM",
+            "pointer": "",
+            "level": 2,
+            "children": []
+          }
+        ]
+      },
+      {
+        "data": "",
+        "tag": "_SCHEMA",
+        "pointer": "",
+        "level": 1,
+        "children": [
+          {
+            "data": "",
+            "tag": "INDI",
+            "pointer": "",
+            "level": 2,
+            "children": [
+              {
+                "data": "",
+                "tag": "_FA1",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Fact 1",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_FA2",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Fact 2",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_FA3",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Fact 3",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_FA4",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Fact 4",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_FA5",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Fact 5",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_FA6",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Fact 6",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_FA7",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Fact 7",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_FA8",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Fact 8",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_FA9",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Fact 9",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_FA10",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Fact 10",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_FA11",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Fact 11",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_FA12",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Fact 12",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_FA13",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Fact 13",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_MREL",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Relationship to Mother",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_FREL",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Relationship to Father",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "data": "",
+            "tag": "FAM",
+            "pointer": "",
+            "level": 2,
+            "children": [
+              {
+                "data": "",
+                "tag": "_FA1",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Marriage fact",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_FA2",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Fact 2",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_MSTAT",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Marriage Beginning Status",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              },
+              {
+                "data": "",
+                "tag": "_MEND",
+                "pointer": "",
+                "level": 3,
+                "children": [
+                  {
+                    "data": "Marriage Ending Status",
+                    "tag": "LABL",
+                    "pointer": "",
+                    "level": 4,
+                    "children": []
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "data": "",
+    "tag": "SUBM",
+    "pointer": "@SUBM@ ",
+    "level": 0,
+    "children": [
+      {
+        "data": "Glen philip Jones",
+        "tag": "NAME",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "uk",
+        "tag": "ADDR",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      }
+    ]
+  },
+  {
+    "data": "",
+    "tag": "INDI",
+    "pointer": "@I185@ ",
+    "level": 0,
+    "children": [
+      {
+        "data": "John Cheetham /Goulson/",
+        "tag": "NAME",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "M,",
+        "tag": "SEX",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "",
+        "tag": "BIRT",
+        "pointer": "",
+        "level": 1,
+        "children": [
+          {
+            "data": "1862",
+            "tag": "DATE",
+            "pointer": "",
+            "level": 2,
+            "children": []
+          },
+          {
+            "data": "Lincoln, Lincolnshire",
+            "tag": "PLAC",
+            "pointer": "",
+            "level": 2,
+            "children": []
+          }
+        ]
+      },
+      {
+        "data": "@F1@",
+        "tag": "FAMS",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "@NI185@",
+        "tag": "NOTE",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      }
+    ]
+  },
+  {
+    "data": "",
+    "tag": "NOTE",
+    "pointer": "@NI185@ ",
+    "level": 0,
+    "children": [
+      {
+        "data": "Birth Ref 7a 536 Q4 1862 Lincoln,",
+        "tag": "CONC",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "",
+        "tag": "CONT",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "Census Images Held",
+        "tag": "CONT",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "1871",
+        "tag": "CONT",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "1881",
+        "tag": "CONT",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "1891",
+        "tag": "CONT",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "1901",
+        "tag": "CONT",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "",
+        "tag": "CONT",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "The 1909 Kellys directory shows John Cheetham Gouslon, Grocer of 108 Hews",
+        "tag": "CONT",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "on Road, Lincoln.",
+        "tag": "CONC",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "The 1919 Kellys Directory shows the private residence of John to be numb",
+        "tag": "CONT",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "er 22 Hewson Road",
+        "tag": "CONC",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "",
+        "tag": "CONT",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      }
+    ]
+  },
+  {
+    "data": "",
+    "tag": "INDI",
+    "pointer": "@I253@ ",
+    "level": 0,
+    "children": [
+      {
+        "data": "Louisa /Harrison/",
+        "tag": "NAME",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "F",
+        "tag": "SEX",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "",
+        "tag": "BIRT",
+        "pointer": "",
+        "level": 1,
+        "children": [
+          {
+            "data": "1856",
+            "tag": "DATE",
+            "pointer": "",
+            "level": 2,
+            "children": []
+          },
+          {
+            "data": "Lincoln, Lincolnshire",
+            "tag": "PLAC",
+            "pointer": "",
+            "level": 2,
+            "children": []
+          }
+        ]
+      },
+      {
+        "data": "@F1@",
+        "tag": "FAMS",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      }
+    ]
+  },
+  {
+    "data": "",
+    "tag": "INDI",
+    "pointer": "@I254@ ",
+    "level": 0,
+    "children": [
+      {
+        "data": "Edith Mary L /Goulson/",
+        "tag": "NAME",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "F",
+        "tag": "SEX",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "",
+        "tag": "BIRT",
+        "pointer": "",
+        "level": 1,
+        "children": [
+          {
+            "data": "1895",
+            "tag": "DATE",
+            "pointer": "",
+            "level": 2,
+            "children": []
+          },
+          {
+            "data": "Lincoln, Lincolnshire",
+            "tag": "PLAC",
+            "pointer": "",
+            "level": 2,
+            "children": []
+          }
+        ]
+      },
+      {
+        "data": "@F1@",
+        "tag": "FAMC",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "@NI254@",
+        "tag": "NOTE",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      }
+    ]
+  },
+  {
+    "data": "",
+    "tag": "NOTE",
+    "pointer": "@NI254@ ",
+    "level": 0,
+    "children": [
+      {
+        "data": "Birth Ref",
+        "tag": "CONC",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "Lincoln vol 7a pg 551 Q1 1895",
+        "tag": "CONT",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      }
+    ]
+  },
+  {
+    "data": "",
+    "tag": "FAM",
+    "pointer": "@F1@ ",
+    "level": 0,
+    "children": [
+      {
+        "data": "@I185@",
+        "tag": "HUSB",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "@I253@",
+        "tag": "WIFE",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "@I254@",
+        "tag": "CHIL",
+        "pointer": "",
+        "level": 1,
+        "children": [
+          {
+            "data": "Natural",
+            "tag": "_FREL",
+            "pointer": "",
+            "level": 2,
+            "children": []
+          },
+          {
+            "data": "Natural",
+            "tag": "_MREL",
+            "pointer": "",
+            "level": 2,
+            "children": []
+          }
+        ]
+      },
+      {
+        "data": "",
+        "tag": "MARR",
+        "pointer": "",
+        "level": 1,
+        "children": [
+          {
+            "data": "1890",
+            "tag": "DATE",
+            "pointer": "",
+            "level": 2,
+            "children": []
+          },
+          {
+            "data": "Lincoln,Lincolnshire",
+            "tag": "PLAC",
+            "pointer": "",
+            "level": 2,
+            "children": []
+          }
+        ]
+      },
+      {
+        "data": "8915",
+        "tag": "REFN",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "@NF1@",
+        "tag": "NOTE",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      }
+    ]
+  },
+  {
+    "data": "",
+    "tag": "NOTE",
+    "pointer": "@NF1@ ",
+    "level": 0,
+    "children": [
+      {
+        "data": "Ref",
+        "tag": "CONC",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      },
+      {
+        "data": "Lincoln 7a 907 Q3 1890",
+        "tag": "CONT",
+        "pointer": "",
+        "level": 1,
+        "children": []
+      }
+    ]
+  },
+  {
+    "data": "",
+    "tag": "TRLR",
+    "pointer": "",
+    "level": 0,
+    "children": []
+  }
+]

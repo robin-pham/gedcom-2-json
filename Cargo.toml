@@ -1,0 +1,10 @@
+[package]
+name = "gedcom_parser"
+version = "0.1.0"
+authors = ["Robin Pham <robin.pham@gmail.com>"]
+edition = "2018"
+
+[dependencies]
+regex = "1"
+serde_json = "1.0"
+serde = { version = "1.0", features = ["derive"] }
