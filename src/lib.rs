@@ -29,7 +29,7 @@ type Tag = String;
 type Data = String;
 type Pointer = String;
 
-#[derive(Clone, PartialEq, Debug, Serialize)]
+#[derive(Debug, Serialize)]
 pub struct Node<'a> {
   data: Data,
   tag: Tag,
