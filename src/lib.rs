@@ -3,6 +3,13 @@ use serde::Serialize;
 use std::cell::RefCell;
 use std::error::Error;
 use std::fs;
+use wasm_bindgen::prelude::*;
+
+// When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
+// allocator.
+#[cfg(feature = "wee_alloc")]
+#[global_allocator]
+static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 pub struct Config {
   pub input_filename: String,
@@ -59,7 +66,19 @@ pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
   Ok(())
 }
 
-fn parse_to_json(contents: String) -> Result<String, Box<dyn Error>> {
+#[wasm_bindgen]
+pub fn parse_to_js(contents: String) -> Result<JsValue, JsValue> {
+  let mut all_nodes = parse_into_nodes(contents).unwrap();
+  let mut dummy_root = Node::new(-1, "dummy", "", "");
+  build_tree(&mut all_nodes, &mut dummy_root).unwrap();
+  let jsObj: JsValue = JsValue::from_serde(&dummy_root.children)
+    .unwrap()
+    .to_owned();
+
+  Ok(jsObj)
+}
+
+pub fn parse_to_json(contents: String) -> Result<String, Box<dyn Error>> {
   let mut all_nodes = parse_into_nodes(contents)?;
   let mut dummy_root = Node::new(-1, "dummy", "", "");
   build_tree(&mut all_nodes, &mut dummy_root)?;
@@ -80,14 +99,17 @@ fn parse_into_nodes<'a>(contents: String) -> Result<Vec<Node<'a>>, Box<dyn Error
   let re = Regex::new(r"\s*(0|[1-9]+[0-9]*) (@[^@]+@ |\b)([A-Za-z0-9_]+)( [^\n\r]*|\b)").unwrap();
 
   let mut all_nodes = Vec::new();
-  for cap in re.captures_iter(contents.as_str()) {
-    let level: i32 = cap.get(1).unwrap().as_str().parse()?;
-    let pointer = cap.get(2).map_or("", asstr!());
-    let tag = cap.get(3).map_or("", asstr!());
-    let data = cap.get(4).map_or("", asstr!()).trim();
-    let new_node = Node::new(level, tag, data, pointer);
+  let splitted_str = contents.split("\n");
+  for line in splitted_str {
+    for cap in re.captures_iter(line) {
+      let level: i32 = cap.get(1).unwrap().as_str().parse()?;
+      let pointer = cap.get(2).map_or("", asstr!());
+      let tag = cap.get(3).map_or("", asstr!());
+      let data = cap.get(4).map_or("", asstr!()).trim();
+      let new_node = Node::new(level, tag, data, pointer);
 
-    all_nodes.push(new_node);
+      all_nodes.push(new_node);
+    }
   }
 
   Ok(all_nodes)
