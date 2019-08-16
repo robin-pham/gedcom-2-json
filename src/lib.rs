@@ -7,9 +7,9 @@ use wasm_bindgen::prelude::*;
 
 // When the `wee_alloc` feature is enabled, use `wee_alloc` as the global
 // allocator.
-#[cfg(feature = "wee_alloc")]
-#[global_allocator]
-static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
+// #[cfg(feature = "wee_alloc")]
+// #[global_allocator]
+// static ALLOC: wee_alloc::WeeAlloc = wee_alloc::WeeAlloc::INIT;
 
 pub struct Config {
   pub input_filename: String,
@@ -99,9 +99,10 @@ fn parse_into_nodes<'a>(contents: String) -> Result<Vec<Node<'a>>, Box<dyn Error
   let re = Regex::new(r"\s*(0|[1-9]+[0-9]*) (@[^@]+@ |\b)([A-Za-z0-9_]+)( [^\n\r]*|\b)").unwrap();
 
   let mut all_nodes = Vec::new();
-  let splitted_str = contents.split("\n");
+  let splitted_str = contents.split('\n');
   for line in splitted_str {
-    for cap in re.captures_iter(line) {
+    let cap = re.captures(line);
+    if let Some(cap) = cap {
       let level: i32 = cap.get(1).unwrap().as_str().parse()?;
       let pointer = cap.get(2).map_or("", asstr!());
       let tag = cap.get(3).map_or("", asstr!());
